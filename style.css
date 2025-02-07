@@ -1,5 +1,5 @@
 * {
-    font-family:     font-family: 'Inter', sans-serif; /* Modern font */
+    font-family: 'Inter', sans-serif; /* Modern font */
 }
 
 body {
@@ -65,19 +65,6 @@ img {
     color: #B3B3B3;
 }
 
-.category {
-    display: flex;
-    flex-direction: column; /* Stack labels and selects */
-    align-items: flex-start; /* Align items to the start */
-    gap: 10px; /* Spacing between label and select */
-    margin-bottom: 20px;
-}
-
-.category label {
-    font-size: 0.8rem;
-    color: white;
-    margin-bottom: 2px;
-}
 
 .spotify-button, select.spotify-button, .result-button {
     background-color: black; /* Black background */
@@ -96,18 +83,6 @@ img {
 .spotify-button:hover, select.spotify-button:hover {
     background-color: #1ED760;
     color: black; /* Go black on hover */
-}
-
-select.spotify-button {
-    padding-right: 35px; /* Make space for dropdown arrow */
-    background-image: url("data:image/svg+xml,%3Csvg fill='white' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); /* Custom dropdown arrow */
-    background-repeat: no-repeat;
-    background-position-x: calc(100% - 10px);
-    background-position-y: center;
-}
-
-.result-button {
-    color: #1ED760;
 }
 
 #result-container {
@@ -159,4 +134,79 @@ footer {
 
 .social-links li a:hover {
     color: white; /* White on hover */
+}
+
+
+/* ===================================================================================== */
+/* APIS Section */
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3% 5%;
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 20px;
+
+    text-align: left;
+
+    background-color: #1E1E1E;
+}
+
+.detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.img-container img {
+    width: 150px;
+    border-radius: 9999px;
+    transition: all 0.4s ease;
+}
+
+.img-container img:hover{
+    transform: scale(1.1);
+}
+
+.info-container {
+    width: 70%;
+}
+
+.info-container h4 {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: white;
+
+    margin-bottom: 12px;
+}
+
+.visit-link {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    background-color: #1DB954;
+
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.visit-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.info-container span {
+    font-size: 0.9rem;
+    color: gray;
 }
