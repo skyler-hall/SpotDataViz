@@ -1,8 +1,9 @@
 // chat.js
 import { songList } from './spotify_top_hits_clean_json.js';
-//const API_KEY = process.env.API_KEY
-import { API_KEY } from '../temp.js';
+//import { API_KEY } from '../temp.js';
 //--------------------------------------------------------------------------------
+
+const API_KEY = "BQDbx5GxIQCjjMJ31GSmpMcGZxaEWt5sST6ku_gBoZ3rc3iKVWL7_bsmoC368W_L8rxvSCSTJRvSV2OUFmymtkWP2BmwuSg760dc4IZ1c3J3DQccri-yTKq8B5r4KlSOeWAY1v2pZvc"
 
 function showForm() { //displays the search entry bar
     const resultCard = document.getElementById('result-card')
